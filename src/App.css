@@ -73,3 +73,7 @@ nav {
   @apply p-3 bg-white   rounded-full  absolute;
   border: 1px solid black;
 }
+/* Pannel styiling */
+#Pannel {
+  @apply fixed h-screen w-[80%]    top-0 px-12 py-24;
+}

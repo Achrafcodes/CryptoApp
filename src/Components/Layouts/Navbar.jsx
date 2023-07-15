@@ -22,6 +22,7 @@ function Navbar() {
     dispatch(toggleDarkMode());
   };
   let darkmode = useSelector((state) => state.darkmode.darkmode);
+
   return (
     <nav className={darkmode ? "dark-mode" : "light-mode "}>
       <h1 className="Nav--logo">
@@ -50,8 +51,8 @@ function Navbar() {
         <button className="text-xl" onClick={HandletogglingNav}>
           {ActiveMenu ? <AiOutlineMenu /> : <AiOutlineClose />}{" "}
         </button>
-      </div>
-      <ToglingMenu />
+      </div>{" "}
+      <ToglingMenu ActiveMenu={ActiveMenu} />
     </nav>
   );
 }
