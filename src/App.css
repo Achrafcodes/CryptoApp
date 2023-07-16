@@ -28,10 +28,10 @@
 } */
 
 .dark-mode {
-  @apply text-[var(--text-color)] bg-black;
+  @apply text-[#fffafb] bg-[#131515];
 }
 .light-mode {
-  @apply text-black bg-white;
+  @apply text-[#131515] bg-[#fffafb];
 }
 body {
   margin: 0;
@@ -52,7 +52,7 @@ nav {
   @apply gap-4 sm:flex hidden;
 }
 .nav--links a {
-  @apply duration-200 ease-in-out;
+  @apply duration-200  ease-in-out;
 }
 .nav--links a:hover {
   @apply underline -translate-y-0.5;
@@ -61,7 +61,7 @@ nav {
   @apply flex flex-row items-center  md:w-[30%] gap-12;
 }
 .darkmode--toggler {
-  @apply px-1 flex flex-row bg-white text-[var(--primary-color-dark)] items-center h-6 w-[100%]  justify-around rounded-xl  relative;
+  @apply px-1 flex flex-row bg-white text-[var(--primary-color-dark)] items-center h-6 w-[100%] md:w-[10%]  justify-around rounded-xl  relative;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 5%,
@@ -70,10 +70,38 @@ nav {
   );
 }
 .darkmode--toggler button {
-  @apply p-3 bg-white   rounded-full  absolute;
+  @apply p-3 bg-white    rounded-full  absolute;
   border: 1px solid black;
+  transition: ease-in 0.2s;
 }
 /* Pannel styiling */
 #Pannel {
-  @apply fixed h-screen w-[80%]    top-0 px-12 py-24;
+  @apply fixed h-screen w-[80%]  flex  flex-col justify-between  right-0 top-0 px-12 py-24;
+  z-index: -1;
+  transition: all ease 0.2s;
+  box-shadow: -12px 13px 50px 55px rgba(0, 0, 0, 0.3);
+}
+.dark-mode-menu {
+  @apply bg-[#78cdd7] text-[#2b2c28];
+}
+.ligth-mode-menu {
+  @apply bg-[#2b2c28] text-white;
+}
+.Pannel--links {
+  @apply flex  flex-col cursor-pointer gap-6 text-lg;
+}
+.Pannel--links a:hover,
+.Pannel--links a:focus {
+  @apply underline -translate-y-1 font-bold;
+}
+.pannel-buttons {
+  @apply flex gap-4  text-3xl cursor-pointer duration-200;
+}
+.pannel-buttons button {
+  @apply p-2 rounded-full;
+  transition: all ease-out 0.4s;
+  border: 1px solid white;
+}
+.pannel-buttons button:hover {
+  @apply rotate-[360deg] scale-125;
 }

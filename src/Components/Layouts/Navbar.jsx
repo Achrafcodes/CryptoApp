@@ -8,7 +8,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "../../redux/darkmodeSlice";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-import ToglingMenu from "./ToglingMenu";
 
 function Navbar() {
   let dispatch = useDispatch();
@@ -48,11 +47,37 @@ function Navbar() {
         <button className="hidden md:block">
           <BsDiscord />
         </button>
-        <button className="text-xl" onClick={HandletogglingNav}>
-          {ActiveMenu ? <AiOutlineMenu /> : <AiOutlineClose />}{" "}
+        <button
+          className="text-xl lg:hidden block hover:text-white focus:text-white focus:rotate-180 duration-200 ease-in-out"
+          onClick={HandletogglingNav}
+        >
+          {ActiveMenu ? <AiOutlineClose /> : <AiOutlineMenu />}{" "}
         </button>
       </div>{" "}
-      <ToglingMenu ActiveMenu={ActiveMenu} />
+      <div
+        id="Pannel"
+        className={`${darkmode ? "ligth-mode-menu" : "dark-mode-menu"} ${
+          ActiveMenu ? "translate-x-0 " : "-translate-x-[200%]"
+        }`}
+      >
+        <h1 className="Nav--logo">
+          Coin<span>Fizz</span>
+        </h1>
+        <div className="Pannel--links">
+          <a href="/">Home</a>
+          <a href="/">Market</a>
+          <a href="/">Choose Us</a>
+          <a href="/">Join</a>
+        </div>
+        <div className="pannel-buttons">
+          <button>
+            <BsTwitter />{" "}
+          </button>
+          <button>
+            <BsDiscord />
+          </button>
+        </div>
+      </div>{" "}
     </nav>
   );
 }
