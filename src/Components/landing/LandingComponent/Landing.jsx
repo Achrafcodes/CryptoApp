@@ -1,4 +1,3 @@
-import React from "react";
 import "../main.css";
 import { BsTwitter, BsDiscord } from "react-icons/bs";
 import { useSelector } from "react-redux";
@@ -7,12 +6,9 @@ function Landing() {
   return (
     <article>
       <section>
+        <h3>The Future of Digital Currency </h3>
         <h1>
-          Welcome to{" "}
-          <span className="text-white">
-            Coin<span className="fizz">Fizz</span>
-          </span>
-          : The Future of Digital Currency!{" "}
+          Welcome to <span>CoinFizz</span>
         </h1>
         <p>
           Discover CoinFizz: Your gateway to the future of digital currency.
