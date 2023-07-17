@@ -40,7 +40,8 @@ body {
 }
 /* navBar */
 nav {
-  @apply w-full flex justify-between px-12 py-4 items-center;
+  @apply w-screen flex justify-between  px-12 py-4 items-center;
+  z-index: 50;
 }
 .Nav--logo {
   @apply text-2xl font-bold;
@@ -49,7 +50,7 @@ nav {
   @apply text-[var(--primary-color-dark)];
 }
 .nav--links {
-  @apply gap-4 sm:flex hidden;
+  @apply gap-4 md:flex hidden;
 }
 .nav--links a {
   @apply duration-200  ease-in-out;
@@ -58,10 +59,10 @@ nav {
   @apply underline -translate-y-0.5;
 }
 .nav--buttons {
-  @apply flex flex-row items-center  md:w-[30%] gap-12;
+  @apply flex flex-row items-center  w-auto gap-12;
 }
 .darkmode--toggler {
-  @apply px-1 flex flex-row bg-white text-[var(--primary-color-dark)] items-center h-6 w-[100%] md:w-[10%]  justify-around rounded-xl  relative;
+  @apply px-1 flex flex-row bg-white text-[var(--primary-color-dark)] items-center h-6 w-auto lg:w-[50px]  justify-around rounded-xl  relative;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 5%,
@@ -74,18 +75,22 @@ nav {
   border: 1px solid black;
   transition: ease-in 0.2s;
 }
+.menu--button {
+  @apply z-50 text-2xl md:hidden block;
+}
 /* Pannel styiling */
 #Pannel {
   @apply fixed h-screen w-[80%]  flex  flex-col justify-between  right-0 top-0 px-12 py-24;
-  z-index: -1;
+
+  z-index: 10;
   transition: all ease 0.2s;
   box-shadow: -12px 13px 50px 55px rgba(0, 0, 0, 0.3);
 }
 .dark-mode-menu {
-  @apply bg-[#78cdd7] text-[#2b2c28];
+  @apply bg-[#fffafb] text-[#2b2c28];
 }
 .ligth-mode-menu {
-  @apply bg-[#2b2c28] text-white;
+  @apply bg-[#2b2c28] text-[#fffafb];
 }
 .Pannel--links {
   @apply flex  flex-col cursor-pointer gap-6 text-lg;
