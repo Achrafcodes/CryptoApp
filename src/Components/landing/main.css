@@ -1,19 +1,45 @@
 article {
-  @apply flex flex-col   px-4 items-center md:items-center   w-screen h-auto py-12 gap-12 md:flex-row  md:px-24;
+  @apply flex flex-col md:gap-12 gap-24 h-screen items-center justify-center;
+  background: linear-gradient(
+      93deg,
+      rgba(2, 0, 36, 0.94) 0%,
+      rgba(2, 0, 36, 0.8) 35%,
+      rgba(125, 249, 255, 0.375875350140056) 100%
+    ),
+    url("../../assets/pexels-alesia-kozik-6772077.jpg");
+  background-position: center;
+  background-size: cover;
 }
+
 section {
-  @apply text-start w-[90%];
+  @apply text-start flex gap-12 flex-col items-center justify-center pb-12 w-[80%];
 }
 section h1 {
-  @apply text-2xl text-center font-bold md:text-6xl md:text-left w-[70%];
+  @apply text-4xl text-[#ffffff] text-center font-medium md:text-6xl;
   line-height: 2;
 }
 section h1 span {
-  @apply text-[#00ffff]  underline font-extrabold;
+  @apply underline font-bold;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   letter-spacing: 3px;
 }
+.fizz {
+  color: aqua;
+}
 .hero-img {
   @apply h-[400px] w-[50%];
+}
+section p {
+  @apply text-white  md:h-auto h-12 overflow-y-scroll md:overflow-hidden text-lg text-center font-thin break-words;
+}
+.discri {
+  @apply text-white font-thin;
+  text-decoration: none;
+}
+.buttons {
+  @apply flex w-full justify-center gap-12;
+}
+.buttons button {
+  @apply w-[25%] md:w-[15%] h-12 flex items-center justify-center gap-4 text-lg;
 }
