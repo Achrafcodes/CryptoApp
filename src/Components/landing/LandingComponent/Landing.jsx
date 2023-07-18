@@ -4,8 +4,8 @@ import { useSelector } from "react-redux";
 function Landing() {
   let darkmode = useSelector((state) => state.darkmode.darkmode);
   return (
-    <article>
-      <section>
+    <article className="Landing--page">
+      <section className="landing-section">
         <h3>The Future of Digital Currency </h3>
         <h1>
           Welcome to <span>CoinFizz</span>
