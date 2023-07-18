@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "../../redux/darkmodeSlice";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   // Get the Redux dispatch function
@@ -43,8 +44,7 @@ function Navbar() {
 
       {/* Navigation links */}
       <div className="nav--links">
-        <a href="/">Home</a>
-        <a href="/">Market</a>
+        <Link to="/">Home</Link> <Link to="market">Market</Link>
         <a href="/">Choose Us</a>
         <a href="/">Join</a>
       </div>
