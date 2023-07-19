@@ -1,5 +1,5 @@
-article {
-  @apply flex flex-col md:gap-12 gap-24 h-screen items-center justify-center;
+.Landing--page {
+  @apply flex flex-col w-full md:gap-12 gap-24 h-screen items-center overflow-hidden justify-center;
   background: linear-gradient(
       90deg,
       rgba(2, 0, 36, 1) 0%,
@@ -11,14 +11,14 @@ article {
   background-size: cover;
 }
 
-section {
+.landing-section {
   @apply text-start flex  flex-col items-center pb-12 w-[70%];
 }
-section h1 {
+.landing-section h1 {
   @apply text-4xl text-[#ffffff] text-center font-bold md:text-7xl;
   line-height: 2;
 }
-section h1 span {
+.landing-section h1 span {
   position: relative;
   font-weight: bold;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -38,7 +38,7 @@ section h1 span {
   background-clip: text;
   -webkit-text-stroke: 0.5px transparent;
 }
-section h1 span::after {
+.landing-section h1 span::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -52,14 +52,14 @@ section h1 span::after {
     rgba(0, 255, 239, 1) 100%
   );
 }
-section h3 {
+.landing-section h3 {
   @apply text-3xl font-thin text-center text-white;
 }
 .hero-img {
   @apply h-[400px] w-[50%];
 }
-section p {
-  @apply text-white  md:h-auto h-24 overflow-y-scroll md:overflow-hidden text-xl text-center font-thin break-words;
+.landing-section p {
+  @apply text-white  md:h-auto h-24   text-xl text-center font-thin break-words;
 }
 .discri {
   @apply text-white font-thin;
@@ -70,4 +70,33 @@ section p {
 }
 .buttons button {
   @apply w-[35%] md:w-[15%] h-12 flex items-center justify-center gap-4 text-lg;
+}
+/* Market Section  */
+#currencies {
+  @apply flex px-12 gap-12 overflow-x-scroll flex-col  w-full  h-auto;
+  font-family: "Oswald", sans-serif;
+}
+
+.cur--name {
+  @apply flex   font-bold  w-[10%]  gap-3;
+}
+.name {
+  @apply w-[150px] flex gap-4;
+}
+.curr--section {
+  @apply flex  gap-12 font-bold;
+}
+.crypto-list {
+  @apply flex  flex-row gap-12 h-12;
+  border-bottom: 1px solid #cccccc;
+}
+.crypto-list li {
+  @apply min-w-[120px] h-auto flex items-center gap-4 text-center max-w-[120px] lg:min-w-[200px] overflow-x-hidden lg:overflow-hidden lg:max-w-[200px];
+  border-radius: 10px;
+}
+.currencies--article {
+  @apply flex flex-col   justify-between gap-12;
+}
+.curr--section {
+  @apply flex gap-32;
 }
