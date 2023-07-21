@@ -79,14 +79,13 @@
 /* Market Section  */
 #currencies {
   @apply flex gap-12 p-10 items-center overflow-x-scroll lg:overflow-auto flex-col  w-full  h-auto;
-  font-family: "Oswald", sans-serif;
+  font-family: "Inter", sans-serif;
   border-radius: 10px;
   box-shadow: 0px 10px 15px 9px rgba(107, 105, 105, 0.2);
 }
 
 .cur--name {
   @apply flex   font-bold  items-center   h-14 w-auto lg:min-w-[10%] gap-3;
-  border-bottom: 1px solid #cccccc57;
 }
 .name {
   @apply w-[200px] flex  gap-2;
@@ -96,10 +95,10 @@
 }
 .curr--section {
   @apply flex   font-bold items-center;
+  border-bottom: 3px solid rgba(0, 212, 219, 0.452);
 }
 .crypto-list {
   @apply flex w-auto gap-12 flex-row h-14;
-  border-bottom: 1px solid #cccccc57;
 }
 .crypto-list li {
   @apply flex lg:w-40 min-w-[150px] flex-row  justify-center text-center gap-2 items-center overflow-x-scroll lg:overflow-x-hidden  text-base;

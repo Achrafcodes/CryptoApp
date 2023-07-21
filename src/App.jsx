@@ -3,10 +3,10 @@ import "./App.css";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./Components/landing/LandingComponent/Landing";
 import { Suspense, lazy } from "react";
 const LazyMarket = lazy(() => import("./Components/landing/Market/Market"));
 import Loading from "./Components/Loading/Loading";
+import Hero from "./Components/landing/hero";
 function App() {
   return (
     <Provider store={store}>
@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Landing />} />
+          <Route path="/" element={<Hero />} />
           <Route
             path="market"
             element={
