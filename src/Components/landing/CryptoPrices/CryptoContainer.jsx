@@ -26,7 +26,6 @@ function CryptoContainer() {
           <li>%low 24h</li>
           <li>%higth 24h</li>
           <li>Market cap</li>
-          <li>volume 24h</li>
           <li>price change pourcentage</li>
         </ul>
       </section>{" "}
@@ -60,7 +59,6 @@ function CryptoContainer() {
               <li>{json.low_24h} $</li>
               <li>{json.high_24h} $</li>
               <li>{json.market_cap} $</li>
-              <li>{json.total_volume} $</li>
               <li
                 className={
                   json.price_change_percentage_24h > 0

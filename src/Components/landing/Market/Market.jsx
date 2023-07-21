@@ -45,7 +45,9 @@ function Market() {
           </section>
         ))}
       </section>
-      <CryptoContainer />
+      <section className="">
+        <CryptoContainer />
+      </section>
     </div>
   );
 }

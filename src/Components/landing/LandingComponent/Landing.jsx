@@ -10,7 +10,8 @@ function Landing() {
         <h1>
           Welcome to{" "}
           <span>
-            Coin<span>AS</span>
+            Coin
+            <span>Fizz</span>
           </span>
         </h1>
         <p>

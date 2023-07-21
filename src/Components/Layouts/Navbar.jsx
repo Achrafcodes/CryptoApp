@@ -38,7 +38,7 @@ function Navbar() {
       <h1 className="Nav--logo">
         Coin
         <span className={darkmode ? "text-[#7df9ff]" : "text-[#858585]"}>
-          AS
+          Fizz
         </span>
       </h1>
 
