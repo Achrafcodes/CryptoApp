@@ -38,7 +38,7 @@ function Navbar() {
       <h1 className="Nav--logo">
         Coin
         <span className={darkmode ? "text-[#7df9ff]" : "text-[#858585]"}>
-          Fizz
+          AS
         </span>
       </h1>
 
@@ -96,7 +96,7 @@ function Navbar() {
         {/* Mobile menu links */}
         <div className="Pannel--links">
           <a href="/">Home</a>
-          <a href="/">Market</a>
+          <a href="market">Market</a>
           <a href="/">Choose Us</a>
           <a href="/">Join</a>
         </div>

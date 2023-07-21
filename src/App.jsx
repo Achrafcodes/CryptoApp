@@ -4,7 +4,9 @@ import store from "./redux/store";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./Components/landing/LandingComponent/Landing";
-import CryptoContainer from "./Components/landing/CryptoPrices/CryptoContainer";
+import { Suspense, lazy } from "react";
+const LazyMarket = lazy(() => import("./Components/landing/Market/Market"));
+import Loading from "./Components/Loading/Loading";
 function App() {
   return (
     <Provider store={store}>
@@ -13,7 +15,14 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="market" element={<CryptoContainer />} />
+          <Route
+            path="market"
+            element={
+              <Suspense fallback={<Loading />}>
+                <LazyMarket />{" "}
+              </Suspense>
+            }
+          />
         </Routes>
       </Router>
     </Provider>

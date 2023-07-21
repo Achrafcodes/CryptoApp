@@ -1,20 +1,18 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+
 import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
 function CryptoContainer() {
   let [data, setdata] = useState([]);
   let darkmode = useSelector((state) => state.darkmode.darkmode);
   useEffect(() => {
-    fetch(
-      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=INR&order=market_cap_desc&per_page=100&page=1&sparkline=false"
-    )
+    fetch("../../../../data.json")
       .then((response) => response.json())
       .then((jsonData) => setdata(jsonData))
       .catch((error) => {
         console.error("failed", error);
       });
   }, []);
-  console.log(data);
   return (
     <article id="currencies" className={darkmode ? "dark-mode" : "ligth-mode"}>
       <section className="curr--section">
@@ -34,13 +32,15 @@ function CryptoContainer() {
       </section>{" "}
       <section className="currencies--article">
         {data.map((json, i) => (
-          <section key={i} className="curr--section ">
-            <div
-              className={`cur--name ${darkmode ? "  bg-black" : "bg-white"}`}
-            >
+          <section
+            key={i}
+            className={`curr--section ${darkmode ? "dark-mode" : "ligth-mode"}`}
+          >
+            <div className={`cur--name `}>
               <h1>{data.indexOf(json) + 1}</h1>
               <h1 className="name">
-                <img className="h-6 w-6" src={json.image} alt="" /> {json.name}
+                <img className="h-6 w-6" src={json.image} alt="" />{" "}
+                <span>{json.name}</span>
               </h1>
             </div>
             <ul className="crypto-list">
@@ -50,12 +50,12 @@ function CryptoContainer() {
                   json.price_change_24h > 0 ? "text-green-500" : "text-red-500"
                 }
               >
-                {json.price_change_24h > 0 ? (
+                {json.price_change_percentage_24h > 0 ? (
                   <BiSolidUpArrow />
                 ) : (
                   <BiSolidDownArrow />
                 )}{" "}
-                {json.price_change_24h}
+                <span className="w-24 "> {json.price_change_24h}</span>
               </li>
               <li>{json.low_24h} $</li>
               <li>{json.high_24h} $</li>
@@ -63,7 +63,9 @@ function CryptoContainer() {
               <li>{json.total_volume} $</li>
               <li
                 className={
-                  json.price_change_24h > 0 ? "text-green-500" : "text-red-500"
+                  json.price_change_percentage_24h > 0
+                    ? "text-green-500"
+                    : "text-red-500"
                 }
               >
                 {json.price_change_percentage_24h > 0 ? (

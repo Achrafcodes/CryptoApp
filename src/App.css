@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 :root {
   /* Colors - Light Mode */
   --primary-color-light: #7df9ff; /* Blue */
@@ -49,7 +50,9 @@ nav {
 .Nav--logo {
   @apply text-2xl font-bold;
 }
-
+.Nav--logo span {
+  font-family: "Kaushan Script", cursive;
+}
 .nav--links {
   @apply gap-4 md:flex hidden;
 }
@@ -112,13 +115,31 @@ nav {
   @apply rotate-[360deg] scale-125;
 }
 .dark-button {
-  @apply bg-[#ffff] rounded-lg text-[#44555f];
+  @apply cursor-pointer bg-[#ffff] rounded-lg text-[#44555f];
 }
 .ligth-button {
-  @apply bg-[#44555f] rounded-lg text-[#ffff];
+  @apply cursor-pointer bg-[#44555f] rounded-lg text-[#ffff];
 }
 .dark-button:hover,
 .ligth-button:hover {
   @apply bg-[#858585] text-[#010b13];
   box-shadow: 0px 10px 15px 9px rgba(107, 105, 105, 0.2);
+}
+/* Market */
+.market {
+  @apply h-auto px-12;
+}
+.market .caroussel {
+  @apply flex items-center h-52 gap-4 overflow-hidden w-full;
+}
+.caroussel section {
+  @apply flex gap-4  px-2 items-center h-16  justify-center min-w-[200px];
+  box-shadow: 19px 10px 15px -3px rgba(121, 121, 121, 0.105);
+  border-radius: 10px;
+}
+.caroussel section img {
+  @apply h-9 w-9;
+}
+.caroussel h1 {
+  @apply font-bold;
 }
