@@ -1,5 +1,5 @@
 .Landing--page {
-  @apply flex flex-col w-full md:gap-12 gap-24 h-screen items-center overflow-hidden justify-center;
+  @apply flex flex-col w-full md:gap-12 gap-24 h-screen items-center  justify-center;
   background: linear-gradient(
       90deg,
       rgba(2, 0, 36, 1) 0%,
@@ -18,6 +18,7 @@
   @apply text-4xl text-[#ffffff] text-center font-bold md:text-7xl;
   line-height: 2;
 }
+
 .landing-section h1 span {
   position: relative;
   font-weight: bold;
@@ -25,6 +26,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   letter-spacing: 3px;
   border-bottom: 10px solid transparent;
+  padding-bottom: 10px;
   /* For WebKit-based browsers */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -37,6 +39,9 @@
   /* For non-WebKit browsers */
   background-clip: text;
   -webkit-text-stroke: 0.5px transparent;
+}
+.landing-section h1 span span {
+  font-family: "Kaushan Script", cursive;
 }
 .landing-section h1 span::after {
   content: "";
@@ -53,7 +58,7 @@
   );
 }
 .landing-section h3 {
-  @apply text-3xl font-thin text-center text-white;
+  @apply text-3xl font-medium text-center text-white;
 }
 .hero-img {
   @apply h-[400px] w-[50%];
@@ -73,25 +78,30 @@
 }
 /* Market Section  */
 #currencies {
-  @apply flex px-12 gap-12 overflow-x-scroll flex-col  w-full  h-auto;
-  font-family: "Oswald", sans-serif;
+  @apply flex gap-12 p-10 items-center overflow-x-scroll lg:overflow-auto flex-col  w-full  h-auto;
+  font-family: "Inter", sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px 9px rgba(107, 105, 105, 0.2);
 }
 
 .cur--name {
-  @apply flex   font-bold  w-[10%]  gap-3;
+  @apply flex   font-bold  items-center   h-14 w-auto lg:min-w-[10%] gap-3;
 }
 .name {
-  @apply w-[150px] flex gap-4;
+  @apply w-[200px] flex  gap-2;
+}
+.name span {
+  @apply w-[200px];
 }
 .curr--section {
-  @apply flex  gap-12 font-bold;
+  @apply flex   font-bold items-center;
+  border-bottom: 3px solid rgba(0, 212, 219, 0.452);
 }
 .crypto-list {
-  @apply flex  flex-row gap-12 h-12;
-  border-bottom: 1px solid #cccccc;
+  @apply flex w-auto gap-12 flex-row h-14;
 }
 .crypto-list li {
-  @apply min-w-[120px] h-auto flex items-center gap-4 text-center max-w-[120px] lg:min-w-[200px] overflow-x-hidden lg:overflow-hidden lg:max-w-[200px];
+  @apply flex lg:w-40 min-w-[150px] flex-row  justify-center text-center gap-2 items-center overflow-x-scroll lg:overflow-x-hidden  text-base;
   border-radius: 10px;
 }
 .currencies--article {

@@ -96,7 +96,7 @@ function Navbar() {
         {/* Mobile menu links */}
         <div className="Pannel--links">
           <a href="/">Home</a>
-          <a href="/">Market</a>
+          <a href="market">Market</a>
           <a href="/">Choose Us</a>
           <a href="/">Join</a>
         </div>

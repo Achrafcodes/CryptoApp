@@ -8,7 +8,11 @@ function Landing() {
       <section className="landing-section">
         <h3>The Future of Digital Currency </h3>
         <h1>
-          Welcome to <span>CoinFizz</span>
+          Welcome to{" "}
+          <span>
+            Coin
+            <span>Fizz</span>
+          </span>
         </h1>
         <p>
           Discover CoinFizz: Your gateway to the future of digital currency.
