@@ -78,7 +78,7 @@
 }
 /* Market Section  */
 #currencies {
-  @apply flex gap-12 p-10 items-center overflow-x-scroll lg:overflow-auto flex-col  w-full  h-auto;
+  @apply flex gap-12 p-10 items-start lg:items-start  overflow-x-scroll lg:overflow-auto flex-col  w-full  h-auto;
   font-family: "Inter", sans-serif;
   border-radius: 10px;
 }
@@ -94,18 +94,17 @@
 }
 .curr--section {
   @apply flex   font-bold items-center;
-  border-bottom: 3px solid rgba(0, 212, 219, 0.452);
 }
 .crypto-list {
   @apply flex w-auto gap-12 flex-row h-14;
 }
 .crypto-list li {
-  @apply flex lg:w-40 min-w-[150px] flex-row  justify-center text-center gap-2 items-center overflow-x-scroll lg:overflow-x-hidden  text-base;
+  @apply flex lg:w-40 min-w-[150px]  flex-row  justify-center text-center gap-2 items-center overflow-x-scroll lg:overflow-x-hidden  text-base;
   border-radius: 10px;
 }
 .currencies--article {
   @apply flex flex-col   justify-between gap-12;
 }
 .curr--section {
-  @apply flex gap-32;
+  @apply flex;
 }

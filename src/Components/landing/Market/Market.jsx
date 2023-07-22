@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CryptoContainer from "../CryptoPrices/CryptoContainer";
 import { useSelector } from "react-redux";
+import Marketcap from "../CryptoPrices/Marketcap";
 
 function Market() {
   let darkmode = useSelector((state) => state.darkmode.darkmode);
@@ -44,6 +45,10 @@ function Market() {
             </div>
           </section>
         ))}
+      </section>
+      <section>
+        {" "}
+        <Marketcap data={data} />{" "}
       </section>
       <section className="">
         <CryptoContainer />

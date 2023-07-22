@@ -18,7 +18,9 @@ function MarketSec() {
   return (
     <article
       id="currencies"
-      className={`${darkmode ? "dark-mode" : "ligth-mode   "}`}
+      className={`  flex  items-center ${
+        darkmode ? "dark-mode" : "ligth-mode   "
+      }`}
     >
       <h1 className="font-bold text-center text-6xl w-[60%]">
         Buy Bitcoin and other crypto at true cost
