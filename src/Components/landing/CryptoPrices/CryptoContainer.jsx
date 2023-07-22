@@ -14,7 +14,10 @@ function CryptoContainer() {
       });
   }, []);
   return (
-    <article id="currencies" className={darkmode ? "dark-mode" : "ligth-mode"}>
+    <article
+      id="currencies"
+      className={darkmode ? "dark-mode" : "ligth-mode ligth-shadow"}
+    >
       <section className="curr--section">
         <div className="cur--name">
           <h1>#</h1>

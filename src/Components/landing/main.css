@@ -81,7 +81,6 @@
   @apply flex gap-12 p-10 items-center overflow-x-scroll lg:overflow-auto flex-col  w-full  h-auto;
   font-family: "Inter", sans-serif;
   border-radius: 10px;
-  box-shadow: 0px 10px 15px 9px rgba(107, 105, 105, 0.2);
 }
 
 .cur--name {

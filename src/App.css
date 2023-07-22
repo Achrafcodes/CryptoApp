@@ -36,8 +36,17 @@ button {
 .dark-mode {
   @apply text-[#fffafb] bg-[#131515];
 }
-.light-mode {
+.ligth-mode {
   @apply text-[#131515] bg-[#fffafb];
+}
+.ligth-shadow {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.dark-shadow {
+  box-shadow: rgba(255, 255, 255, 0.171) 0px 2px 4px,
+    rgba(255, 255, 255, 0.2) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 body {
   margin: 0;
