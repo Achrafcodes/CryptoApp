@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CryptoContainer from "../CryptoPrices/CryptoContainer";
 import { useSelector } from "react-redux";
+import Marketcap from "../CryptoPrices/Marketcap";
 
 function Market() {
   let darkmode = useSelector((state) => state.darkmode.darkmode);
@@ -27,7 +28,7 @@ function Market() {
   }, []);
   const containerStyle = {
     transform: `translateX(-${curSlide * 100}%)`, // Applying translateX with the specified value
-    transition: "transform 0.5s ease", // Adding a smooth transition effect
+    transition: "transform 0.5s ", // Adding a smooth transition effect
   };
   return (
     <div className={`market ${darkmode ? "dark-mode" : "ligth-mode "}`}>
@@ -44,6 +45,10 @@ function Market() {
             </div>
           </section>
         ))}
+      </section>
+      <section>
+        {" "}
+        <Marketcap data={data} />{" "}
       </section>
       <section className="">
         <CryptoContainer />

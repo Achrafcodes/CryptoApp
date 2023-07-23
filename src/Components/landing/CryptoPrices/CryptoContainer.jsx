@@ -14,8 +14,17 @@ function CryptoContainer() {
       });
   }, []);
   return (
-    <article id="currencies" className={darkmode ? "dark-mode" : "ligth-mode"}>
-      <section className="curr--section">
+    <article
+      id="currencies"
+      className={`  ${
+        darkmode ? "bg-[#1a1a1a] text-[#fffafb]" : "ligth-mode   ligth-shadow"
+      }`}
+    >
+      <section
+        className={`curr--section ${
+          darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
+        } `}
+      >
         <div className="cur--name">
           <h1>#</h1>
           <h1 className="name">Name</h1>
@@ -27,19 +36,30 @@ function CryptoContainer() {
           <li>%higth 24h</li>
           <li>Market cap</li>
           <li>price change pourcentage</li>
+          <li>
+            market cap change <br />
+            percentage 24h
+          </li>
         </ul>
       </section>{" "}
       <section className="currencies--article">
         {data.map((json, i) => (
           <section
             key={i}
-            className={`curr--section ${darkmode ? "dark-mode" : "ligth-mode"}`}
+            className={`curr--section ${
+              darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
+            } `}
           >
             <div className={`cur--name `}>
               <h1>{data.indexOf(json) + 1}</h1>
               <h1 className="name">
                 <img className="h-6 w-6" src={json.image} alt="" />{" "}
-                <span>{json.name}</span>
+                <span>
+                  {json.name}{" "}
+                  <span className="font-extralight">
+                    ({json.symbol.toUpperCase()})
+                  </span>
+                </span>
               </h1>
             </div>
             <ul className="crypto-list">
@@ -72,6 +92,20 @@ function CryptoContainer() {
                   <BiSolidDownArrow />
                 )}{" "}
                 {json.price_change_percentage_24h}
+              </li>
+              <li
+                className={
+                  json.market_cap_change_percentage_24h > 0
+                    ? "text-green-500"
+                    : "text-red-500"
+                }
+              >
+                {json.market_cap_change_percentage_24h > 0 ? (
+                  <BiSolidUpArrow />
+                ) : (
+                  <BiSolidDownArrow />
+                )}{" "}
+                {json.market_cap_change_percentage_24h}
               </li>
             </ul>
           </section>
