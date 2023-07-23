@@ -7,7 +7,10 @@ function Hero() {
   return (
     <div className={`hero ${darkmode ? "dark-mode" : "ligth-mode"}`}>
       <Landing />
-      <MarketSec />
+      <div id="markett">
+        {" "}
+        <MarketSec />
+      </div>
     </div>
   );
 }

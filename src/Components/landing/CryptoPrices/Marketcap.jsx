@@ -83,11 +83,11 @@ function Marketcap({ data }) {
           ))}
         </div>
 
-        <div className="buttons">
+        <div className="car-buts">
           {/* Button to navigate to the right */}
           <button
             onClick={HandlePrevSlide}
-            className={darkmode ? "dark-button " : "ligth-button"}
+            className={darkmode ? "ligth-button" : "dark-button "}
           >
             {" "}
             <BsChevronLeft />
@@ -95,7 +95,7 @@ function Marketcap({ data }) {
           {/* Button to navigate to the left */}
           <button
             onClick={HandleNextSlide}
-            className={darkmode ? "dark-button " : "ligth-button"}
+            className={darkmode ? "ligth-button" : "dark-button "}
           >
             {" "}
             <BsChevronRight />{" "}

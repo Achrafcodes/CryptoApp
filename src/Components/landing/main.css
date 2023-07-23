@@ -78,7 +78,7 @@
 }
 /* Market Section  */
 #currencies {
-  @apply flex gap-12 p-10 items-start  xl:items-center overflow-x-scroll lg:overflow-auto flex-col  w-full  h-auto;
+  @apply flex gap-12 p-10 items-start  xl:items-center overflow-x-scroll lg:overflow-hidden flex-col  w-full  h-auto;
   font-family: "Inter", sans-serif;
   border-radius: 10px;
 }
@@ -99,7 +99,7 @@
   @apply flex w-auto gap-12 flex-row h-14;
 }
 .crypto-list li {
-  @apply flex lg:w-40 min-w-[150px]  flex-row  justify-center text-center gap-2 items-center overflow-x-scroll lg:overflow-x-hidden  text-base;
+  @apply flex lg:w-40 min-w-[150px] overflow-y-hidden  flex-row  justify-center text-center gap-2 items-center overflow-x-scroll lg:overflow-x-hidden  text-base;
   border-radius: 10px;
 }
 .currencies--article {
@@ -118,11 +118,11 @@
 .Marketcap-carr {
   @apply relative flex justify-center items-center w-full lg:w-[60%] px-2;
 }
-.buttons {
-  @apply absolute flex justify-between left-0 text-black;
+.car-buts {
+  @apply absolute flex justify-between w-full left-0 text-black;
 }
-.buttons button {
-  @apply rounded-full  flex items-center  lg:h-12 lg:w-12 w-6 h-6;
+.car-buts button {
+  @apply rounded-full  text-xl p-1 font-bold text-center flex items-center  lg:h-8 lg:w-8 w-6 h-6;
 }
 .Marketcap-slide {
   @apply flex min-w-[400px] lg:min-w-[400px]  gap-2 h-[80%] py-2 flex-col rounded-lg items-center;
