@@ -16,9 +16,15 @@ function CryptoContainer() {
   return (
     <article
       id="currencies"
-      className={`  ${darkmode ? "dark-mode" : "ligth-mode ligth-shadow"}`}
+      className={`  ${
+        darkmode ? "bg-[#1a1a1a] text-[#fffafb]" : "ligth-mode   ligth-shadow"
+      }`}
     >
-      <section className="curr--section">
+      <section
+        className={`curr--section ${
+          darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
+        } `}
+      >
         <div className="cur--name">
           <h1>#</h1>
           <h1 className="name">Name</h1>
@@ -40,7 +46,9 @@ function CryptoContainer() {
         {data.map((json, i) => (
           <section
             key={i}
-            className={`curr--section ${darkmode ? "dark-mode" : "ligth-mode"}`}
+            className={`curr--section ${
+              darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
+            } `}
           >
             <div className={`cur--name `}>
               <h1>{data.indexOf(json) + 1}</h1>

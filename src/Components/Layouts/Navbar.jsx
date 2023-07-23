@@ -33,7 +33,11 @@ function Navbar() {
   let darkmode = useSelector((state) => state.darkmode.darkmode);
 
   return (
-    <nav className={darkmode ? "dark-mode" : "light-mode"}>
+    <nav
+      className={
+        darkmode ? "dark-mode bg-[#1a1a1a]" : "light-mode bg-[#fefefe]"
+      }
+    >
       {/* Logo */}
       <h1 className="Nav--logo">
         Coin

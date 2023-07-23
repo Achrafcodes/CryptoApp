@@ -39,14 +39,17 @@ button {
 .ligth-mode {
   @apply text-[#131515] bg-[#fffafb];
 }
+.dk-container {
+  @apply bg-[#3A3A3C] text-[#fffafb];
+}
 .ligth-shadow {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .dark-shadow {
-  box-shadow: rgba(255, 255, 255, 0.171) 0px 2px 4px,
-    rgba(255, 255, 255, 0.2) 0px 7px 13px -3px,
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px,
+    rgba(255, 255, 255, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 body {
   margin: 0;
@@ -57,7 +60,8 @@ body {
 }
 /* navBar */
 nav {
-  @apply w-screen flex justify-between   px-24 h-16 items-center;
+  @apply w-screen flex justify-between    px-24 h-16 items-center;
+  background-color: #1a1a1a;
   z-index: 50;
 }
 .Nav--logo {
@@ -140,7 +144,7 @@ nav {
 }
 /* Market */
 .market {
-  @apply h-auto px-24 flex flex-col  gap-12 py-12;
+  @apply h-auto lg:px-24 px-4 md:px-12  flex flex-col  gap-12 py-12;
 }
 .market .caroussel {
   @apply flex items-center h-52 gap-4 overflow-hidden w-full;

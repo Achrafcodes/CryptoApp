@@ -78,7 +78,7 @@
 }
 /* Market Section  */
 #currencies {
-  @apply flex gap-12 p-10 items-start lg:items-start  overflow-x-scroll lg:overflow-auto flex-col  w-full  h-auto;
+  @apply flex gap-12 p-10 items-start  xl:items-center overflow-x-scroll lg:overflow-auto flex-col  w-full  h-auto;
   font-family: "Inter", sans-serif;
   border-radius: 10px;
 }
@@ -87,7 +87,7 @@
   @apply flex   font-bold  items-center   h-14 w-auto lg:min-w-[10%] gap-3;
 }
 .name {
-  @apply w-[200px] flex  gap-2;
+  @apply w-[200px] flex   gap-2;
 }
 .name span {
   @apply w-[200px];
@@ -107,4 +107,35 @@
 }
 .curr--section {
   @apply flex;
+}
+/* Market Cap Carroussel  */
+.MarketCap-ranking {
+  @apply flex flex-col  gap-12 w-auto;
+}
+.MarketCap-ranking .tittle {
+  @apply text-3xl font-bold;
+}
+.Marketcap-carr {
+  @apply relative flex justify-center items-center w-full lg:w-[60%] px-2;
+}
+.buttons {
+  @apply absolute flex justify-between left-0 text-black;
+}
+.buttons button {
+  @apply rounded-full  flex items-center  lg:h-12 lg:w-12 w-6 h-6;
+}
+.Marketcap-slide {
+  @apply flex min-w-[400px] lg:min-w-[400px]  gap-2 h-[80%] py-2 flex-col rounded-lg items-center;
+}
+.Marketcap-slide figure {
+  @apply flex  gap-3 text-xl font-bold items-center;
+}
+.Marketcap-slide figure h1 span {
+  @apply font-thin;
+}
+.Marketcap-slide figure img {
+  @apply h-12 w-12;
+}
+.Marketcap-slide h3 {
+  @apply text-green-500 font-bold text-lg flex  gap-3 items-center;
 }

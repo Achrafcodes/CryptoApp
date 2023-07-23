@@ -28,7 +28,7 @@ function Market() {
   }, []);
   const containerStyle = {
     transform: `translateX(-${curSlide * 100}%)`, // Applying translateX with the specified value
-    transition: "transform 0.5s ease", // Adding a smooth transition effect
+    transition: "transform 0.5s ", // Adding a smooth transition effect
   };
   return (
     <div className={`market ${darkmode ? "dark-mode" : "ligth-mode "}`}>
