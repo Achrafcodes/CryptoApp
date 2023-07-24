@@ -44,7 +44,6 @@ function Marketcap({ data }) {
       }
     });
   };
-  console.log(currSlide);
   const containerStyle = {
     transform: `translateX(-${currSlide * 100}%)`, // Applying translateX with the specified value
     transition: "transform 0.5s ease", // Adding a smooth transition effect
@@ -55,14 +54,14 @@ function Marketcap({ data }) {
       <article className="Marketcap-carr">
         {/* Rendering the top 12 marketcap items */}
         <div
-          className={`flex   items-center   lg:gap-12  h-40 overflow-hidden w-[90%]  `}
+          className={`flex h-full   items-center   lg:gap-12   overflow-hidden w-[90%]  `}
         >
           {" "}
           {marketcap.slice(0, 12).map((cap, i) => (
             <section
               className={`Marketcap-slide ${
                 darkmode
-                  ? "ligth-shadow bg-[#1a1a1a]"
+                  ? "ligth-shadow  bg-[#1a1a1a]"
                   : "ligth-shadow bg-[#fefefe]"
               } `}
               key={i}

@@ -110,7 +110,8 @@
 }
 /* Market Cap Carroussel  */
 .MarketCap-ranking {
-  @apply flex flex-col w-[50%]  gap-12;
+  @apply flex flex-col px-4 py-2 h-[252px]  w-[55%]   gap-4;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .MarketCap-ranking .tittle {
   @apply text-3xl font-bold;
@@ -125,7 +126,7 @@
   @apply rounded-full  text-xl p-1 font-bold text-center flex items-center  lg:h-8 lg:w-8 w-6 h-6;
 }
 .Marketcap-slide {
-  @apply flex min-w-[400px] lg:min-w-[400px]  gap-2 h-[80%] py-2 flex-col rounded-lg items-center;
+  @apply flex min-w-[400px] lg:min-w-[400px]  gap-2 h-[100%] py-2 flex-col rounded-lg items-center;
 }
 .Marketcap-slide figure {
   @apply flex  gap-3 text-xl font-bold items-center;
@@ -141,11 +142,41 @@
 }
 /* Post Carroussel */
 .Top-post {
-  @apply w-[40%] gap-2    flex overflow-hidden;
+  @apply w-[40%] gap-2  px-4 p-2 relative  justify-center  flex overflow-hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .Top-post section {
-  @apply min-w-[100%];
+  @apply min-w-[100%] relative flex gap-4 flex-col;
 }
-.Top-post section h1 {
-  @apply text-2xl font-bold;
+.Top-post section .cont-tittle {
+  @apply text-3xl   font-bold;
+}
+.user {
+  @apply flex  text-center items-center gap-4 text-xl;
+}
+
+.content {
+  @apply flex flex-col gap-4;
+}
+.content li {
+  @apply flex   w-full justify-between px-6;
+}
+.content li button {
+  @apply mr-24  flex items-center w-[15%] text-lg font-bold p-2 justify-center text-center;
+}
+.Logo {
+  @apply p-4 h-5 w-5 flex items-center  text-center justify-center font-extrabold rounded-full;
+}
+.content .user span:nth-child(2) {
+  @apply text-sm font-thin;
+}
+.dots {
+  @apply absolute bottom-0;
+}
+.post-infos {
+  @apply flex  font-bold text-lg  text-gray-500/75 items-center gap-5;
+}
+.post-infos .icon,
+.like {
+  @apply flex gap-3 font-bold items-center;
 }
