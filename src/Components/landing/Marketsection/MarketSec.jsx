@@ -42,9 +42,15 @@ function MarketSec() {
         </Link>
       </button>
       <section
-        className={` px-12 py-4 ${darkmode ? "dark-shadow" : "ligth-shadow"} `}
+        className={` px-4 py-1 ${
+          darkmode ? "bg-[#1a1a1a] text-[#fffafb]" : "ligth-mode   ligth-shadow"
+        }`}
       >
-        <section className="curr--section ">
+        <section
+          className={`curr--section ${
+            darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
+          } `}
+        >
           <div className="cur--name">
             <h1>#</h1>
             <h1 className="name">Name</h1>
@@ -61,8 +67,8 @@ function MarketSec() {
             <section
               key={i}
               className={`curr--section ${
-                darkmode ? "dark-mode" : "ligth-mode"
-              }`}
+                darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
+              } `}
             >
               <div className={`cur--name `}>
                 <h1>{data.indexOf(json) + 1}</h1>

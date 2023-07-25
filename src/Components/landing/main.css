@@ -78,7 +78,7 @@
 }
 /* Market Section  */
 #currencies {
-  @apply flex gap-12 p-10 items-start  xl:items-center overflow-x-scroll lg:overflow-auto flex-col  w-full  h-auto;
+  @apply flex gap-12 p-10 items-start  xl:items-center overflow-x-scroll lg:overflow-hidden flex-col  w-full  h-auto;
   font-family: "Inter", sans-serif;
   border-radius: 10px;
 }
@@ -99,7 +99,7 @@
   @apply flex w-auto gap-12 flex-row h-14;
 }
 .crypto-list li {
-  @apply flex lg:w-40 min-w-[150px]  flex-row  justify-center text-center gap-2 items-center overflow-x-scroll lg:overflow-x-hidden  text-base;
+  @apply flex lg:w-40 min-w-[150px] overflow-y-hidden  flex-row  justify-center text-center gap-2 items-center overflow-x-scroll lg:overflow-x-hidden  text-base;
   border-radius: 10px;
 }
 .currencies--article {
@@ -110,22 +110,23 @@
 }
 /* Market Cap Carroussel  */
 .MarketCap-ranking {
-  @apply flex flex-col  gap-12 w-auto;
+  @apply flex flex-col px-4 py-2 h-[252px]  lg:w-[55%] w-full  gap-4;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .MarketCap-ranking .tittle {
   @apply text-3xl font-bold;
 }
 .Marketcap-carr {
-  @apply relative flex justify-center items-center w-full lg:w-[60%] px-2;
+  @apply relative flex justify-center items-center w-full  px-2;
 }
-.buttons {
-  @apply absolute flex justify-between left-0 text-black;
+.car-buts {
+  @apply absolute flex justify-between w-full left-0 text-black;
 }
-.buttons button {
-  @apply rounded-full  flex items-center  lg:h-12 lg:w-12 w-6 h-6;
+.car-buts button {
+  @apply rounded-full  text-xl p-1 font-bold text-center flex items-center  lg:h-8 lg:w-8 w-6 h-6;
 }
 .Marketcap-slide {
-  @apply flex min-w-[400px] lg:min-w-[400px]  gap-2 h-[80%] py-2 flex-col rounded-lg items-center;
+  @apply flex min-w-[90%] lg:min-w-[400px]  gap-2 h-[100%] py-2 flex-col rounded-lg items-center;
 }
 .Marketcap-slide figure {
   @apply flex  gap-3 text-xl font-bold items-center;
@@ -138,4 +139,45 @@
 }
 .Marketcap-slide h3 {
   @apply text-green-500 font-bold text-lg flex  gap-3 items-center;
+}
+/* Post Carroussel */
+.Top-post {
+  @apply lg:w-[40%] w-[95%]   lg:gap-6  gap-2   lg:px-4  relative justify-center  flex overflow-hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.Top-post section {
+  @apply min-w-[100%]  relative flex gap-4 flex-col;
+}
+.cont-tittle {
+  @apply lg:text-3xl text-lg px-2  font-bold;
+}
+.user {
+  @apply flex  justify-start font-bold gap-2 lg:gap-4 text-base items-center lg:text-xl;
+}
+
+.content {
+  @apply flex flex-col p-2  gap-4;
+}
+.content li {
+  @apply flex  items-center  w-full   justify-between px-2;
+}
+.content li button {
+  @apply 2xl:mr-12 md:mr-6 mr-2 flex items-center h-10 lg:w-[15%] text-gray-700  md:w-[20%]  text-lg font-bold p-2 gap-3 justify-center text-center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.Logo {
+  @apply p-4 h-5 w-5 flex items-center  text-center justify-center font-extrabold rounded-full;
+}
+.content .user .userName {
+  @apply lg:text-sm  text-xs font-thin;
+}
+.dots {
+  @apply absolute bottom-0;
+}
+.post-infos {
+  @apply flex  font-bold lg:text-lg   text-gray-500/75 items-center gap-5;
+}
+.post-infos .icon,
+.like {
+  @apply flex gap-3 font-bold items-center;
 }

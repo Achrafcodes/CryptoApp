@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import CryptoContainer from "../CryptoPrices/CryptoContainer";
 import { useSelector } from "react-redux";
 import Marketcap from "../CryptoPrices/Marketcap";
-
+import Carouselle from "../CryptoPrices/Carouselle";
 function Market() {
   let darkmode = useSelector((state) => state.darkmode.darkmode);
   let [curSlide, setActiveSlide] = useState(0);
@@ -46,9 +46,12 @@ function Market() {
           </section>
         ))}
       </section>
-      <section>
+      <section
+        className="flex gap-20
+        h-full lg:flex-row flex-col justify-center overflow-hidden items-center w-full   "
+      >
         {" "}
-        <Marketcap data={data} />{" "}
+        <Marketcap data={data} /> <Carouselle />
       </section>
       <section className="">
         <CryptoContainer />
