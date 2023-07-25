@@ -48,7 +48,7 @@ function Market() {
       </section>
       <section
         className="flex gap-20
-        h-full flex-row  "
+        h-full lg:flex-row flex-col justify-center overflow-hidden items-center w-full   "
       >
         {" "}
         <Marketcap data={data} /> <Carouselle />

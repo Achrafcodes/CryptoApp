@@ -4,16 +4,15 @@ import { FaCommentDots } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import Slideshow from "../../ReusableCompo/Slideshow";
 import { MdVerified } from "react-icons/md";
+import { GrAdd } from "react-icons/gr";
 function Carouselle() {
   let darkmode = useSelector((state) => state.darkmode.darkmode);
   return (
-    <article className="Top-post">
-      <Slideshow interval={6000}>
-        <section
-          className={`top-Accounts${
-            darkmode ? " bg-[#1a1a1a]" : " bg-[#fefefe]"
-          } `}
-        >
+    <article
+      className={`Top-post ${darkmode ? " bg-[#1a1a1a]" : " bg-[#fefefe]"}`}
+    >
+      <Slideshow interval={3600}>
+        <section className={`top-Accounts `}>
           <h1 className="cont-tittle">Top Community Account</h1>
           <ul className="content">
             {" "}
@@ -21,17 +20,17 @@ function Carouselle() {
               {" "}
               <h3 className="user">
                 <span
-                  className={`"Logo bg-green-500" ${
-                    darkmode ? "text-white" : "text-black"
+                  className={`Logo bg-green-500 ${
+                    darkmode ? "text-black" : "text-white"
                   }`}
                 >
                   A
                 </span>
                 Achraf Codes <MdVerified className="text-blue-600" />{" "}
-                <span>@achrafcodes</span>
+                <span className="userName ">@achrafcodes</span>
               </h3>{" "}
               <button className={darkmode ? "ligth-button" : "dark-button"}>
-                + Follow
+                <GrAdd /> <span className="md:block hidden">Follow</span>{" "}
               </button>
             </li>
             <li>
@@ -39,15 +38,16 @@ function Carouselle() {
               <h3 className="user">
                 <span
                   className={`Logo bg-purple-500  ${
-                    darkmode ? "text-white" : "text-black"
+                    darkmode ? "text-black" : "text-white"
                   }`}
                 >
                   W
                 </span>
-                WebT <MdVerified className="text-blue-600" /> <span>@webt</span>
+                WebT <MdVerified className="text-blue-600" />{" "}
+                <span className="userName">@webt</span>
               </h3>{" "}
               <button className={darkmode ? "ligth-button" : "dark-button"}>
-                + Follow
+                <GrAdd /> <span className="md:block hidden">Follow</span>{" "}
               </button>
             </li>
             <li>
@@ -55,16 +55,16 @@ function Carouselle() {
               <h3 className="user">
                 <span
                   className={`Logo bg-blue-900 ${
-                    darkmode ? "text-white" : "text-black"
+                    darkmode ? "text-black" : "text-white"
                   }`}
                 >
                   T
                 </span>
                 Tinny / Smash <MdVerified className="text-blue-600" />{" "}
-                <span>@tinnysmash</span>
+                <span className="userName">@tinnysmash</span>
               </h3>{" "}
               <button className={darkmode ? "ligth-button" : "dark-button"}>
-                + Follow
+                <GrAdd /> <span className="md:block hidden">Follow</span>{" "}
               </button>
             </li>
           </ul>
@@ -75,15 +75,15 @@ function Carouselle() {
             <h3 className="user">
               <span
                 className={`Logo bg-green-500 ${
-                  darkmode ? "text-white" : "text-black"
+                  darkmode ? "text-black" : "text-white"
                 }`}
               >
                 A
               </span>
               Achraf Codes <MdVerified className="text-blue-600" />
-              <span>@achrafcodes</span>
+              <span className="userName">@achrafcodes</span>
             </h3>{" "}
-            <p className="text-xl w-[70%] break-words">
+            <p className="text-xl font-medium w-[90%]  lg:w-[70%] break-words">
               It's officially here! Say hello to the CryptoFizz , with the
               Efinity Matrixchain! 🌟
             </p>
@@ -105,15 +105,16 @@ function Carouselle() {
             <h3 className="user">
               <span
                 className={`Logo bg-purple-500  ${
-                  darkmode ? "text-white" : "text-black"
+                  darkmode ? "text-black" : "text-white"
                 }`}
               >
                 W
               </span>
               WebT
-              <MdVerified className="text-blue-600" /> <span>@webt</span>
+              <MdVerified className="text-blue-600" />{" "}
+              <span className="userName">@webt</span>
             </h3>{" "}
-            <p className="text-xl w-[70%] break-words">
+            <p className="text-xl font-medium w-[90%] lg:w-[70%] break-words">
               It's officially here! Say hello to the CryptoFizz , with the
               Efinity Matrixchain! 🌟
             </p>

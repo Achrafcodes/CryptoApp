@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { useSelector } from "react-redux";
-
 const Slideshow = ({ interval, children }) => {
   const totalSlides = React.Children.count(children);
   const [activeSlide, setActiveSlide] = useState(0);

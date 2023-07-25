@@ -50,7 +50,7 @@ function Marketcap({ data }) {
   };
   return (
     <main className="MarketCap-ranking">
-      <h1 className="tittle">Top Movers</h1>
+      <h1 className="cont-tittle">Top Movers</h1>
       <article className="Marketcap-carr">
         {/* Rendering the top 12 marketcap items */}
         <div
