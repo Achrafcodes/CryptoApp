@@ -35,13 +35,13 @@ function Navbar() {
   return (
     <nav
       className={
-        darkmode ? "dark-mode bg-[#1a1a1a]" : "light-mode bg-[#fefefe]"
+        darkmode ? " z-50 dark-mode bg-[#1a1a1a]" : "light-mode bg-[#fefefe]"
       }
     >
       {/* Logo */}
       <h1 className="Nav--logo">
         Coin
-        <span className={darkmode ? "text-[#7df9ff]" : "text-[#858585]"}>
+        <span className={darkmode ? "text-[#28B8B0]" : "text-[#858585]"}>
           Fizz
         </span>
       </h1>
