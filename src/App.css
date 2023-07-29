@@ -173,3 +173,7 @@ nav {
 .curr--section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
+.car-slide {
+  @apply flex justify-around h-full overflow-hidden items-center;
+  height: 1000px;
+}
