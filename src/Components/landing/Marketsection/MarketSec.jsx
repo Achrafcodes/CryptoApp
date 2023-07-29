@@ -18,7 +18,7 @@ function MarketSec() {
   return (
     <article
       id="currencies"
-      className={`  flex  items-center ${
+      className={`  flex items-center ${
         darkmode ? "dark-mode" : "ligth-mode   "
       }`}
     >
