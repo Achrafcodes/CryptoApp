@@ -176,3 +176,8 @@ nav {
 .car-slide {
   @apply flex h-screen  gap-4 overflow-hidden items-center;
 }
+.ChoseUs {
+  background: url(./assets/blurry-gradient-haikei.svg);
+  background-position: center;
+  background-size: cover;
+}
