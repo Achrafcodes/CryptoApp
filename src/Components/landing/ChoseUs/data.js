@@ -1,4 +1,4 @@
-import image1 from "../../../assets/draws/undraw_bitcoin_re_urgq.svg";
+import image1 from "../../../assets/draws/undraw_bitcoin_p2p_re_1xqa.svg";
 
 import image2 from "../../../assets/draws/undraw_crypto_flowers_re_dyqo.svg";
 

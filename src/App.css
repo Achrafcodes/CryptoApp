@@ -41,7 +41,7 @@ button {
   @apply text-[#070313] bg-[#fffafb];
 }
 .intro {
-  @apply text-4xl font-bold leading-10;
+  @apply lg:text-4xl text-xl font-bold;
   color: #000;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -180,4 +180,23 @@ nav {
   background: url(./assets/blurry-gradient-haikei.svg);
   background-position: center;
   background-size: cover;
+}
+.box {
+  @apply lg:h-[350px] h-[180px] items-center   rounded-lg text-black flex justify-around    lg:w-[600px] w-[450px]  px-2 xl:px-6 py-6  bg-[#fffafb];
+}
+.box h2 {
+  @apply font-bold text-lg break-words lg:text-3xl;
+}
+
+.box p {
+  @apply lg:text-xl text-sm w-full font-light;
+}
+.box-container {
+  @apply gap-4 w-full  flex items-center justify-center    flex-wrap px-12;
+}
+.LANDING-IMG {
+  @apply absolute top-8 lg:top-[16%]    lg:right-[16%] lg:h-[750px] lg:w-[900px] w-[90%];
+}
+.chose-us-text {
+  @apply text-start  xl:gap-12 flex flex-col  h-full   px-4  w-[50%];
 }
