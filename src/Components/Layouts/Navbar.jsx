@@ -35,13 +35,13 @@ function Navbar() {
   return (
     <nav
       className={
-        darkmode ? "dark-mode bg-[#1a1a1a]" : "light-mode bg-[#fefefe]"
+        darkmode ? "  dark-mode bg-[#04052e]" : "light-mode bg-[#fefefe]"
       }
     >
       {/* Logo */}
       <h1 className="Nav--logo">
         Coin
-        <span className={darkmode ? "text-[#7df9ff]" : "text-[#858585]"}>
+        <span className={darkmode ? "text-[#28B8B0]" : "text-[#858585]"}>
           Fizz
         </span>
       </h1>
@@ -56,13 +56,12 @@ function Navbar() {
       {/* Buttons */}
       <div className="nav--buttons">
         {/* Dark mode toggler */}
-        <div className="darkmode--toggler" onClick={HandleDarkmode}>
-          <BsFillMoonFill className="text-sm text-white" />
-          <BsFillSunFill className="text-sm text-black" />
-          <button
-            className={darkmode ? "-translate-x-[50%]" : "translate-x-[50%]"}
-          ></button>
-        </div>
+        <BsFillSunFill
+          onClick={HandleDarkmode}
+          className={` text-xl cursor-pointer ${
+            darkmode ? "text-gray-500" : "text-[#28B8B0]"
+          }`}
+        />
 
         {/* Social media buttons */}
         <button className="hidden md:block">
@@ -88,9 +87,9 @@ function Navbar() {
       {/* Mobile menu */}
       <div
         id="Pannel"
-        className={`${darkmode ? "dark-mode-menu" : "ligth-mode-menu"} ${
-          ActiveMenu ? "translate-x-0" : "-translate-x-[200%]"
-        }`}
+        className={`${
+          darkmode ? "bg-[#04052e] text-[#fefefe]" : "bg-[#fefefe] text-black"
+        } ${ActiveMenu ? "translate-x-0" : "-translate-x-[200%]"}`}
       >
         {/* Mobile menu logo */}
         <h1 className="Nav--logo">
