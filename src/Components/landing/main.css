@@ -99,7 +99,7 @@
   @apply flex lg:w-auto lg:gap-12    gap-12 flex-row h-14;
 }
 .crypto-list li {
-  @apply flex lg:w-40 w-[100px] overflow-y-hidden  flex-row   justify-start   text-start gap-2 items-center overflow-x-scroll lg:overflow-x-hidden   text-base;
+  @apply flex lg:w-40 w-[100px] overflow-y-hidden  flex-row   justify-start   text-start gap-2 items-center overflow-x-scroll md:overflow-x-hidden   text-base;
   border-radius: 10px;
 }
 .currencies--article {

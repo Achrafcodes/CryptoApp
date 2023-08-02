@@ -38,10 +38,10 @@ button {
   @apply text-[#fffafb] bg-[#070313];
 }
 .ligth-mode {
-  @apply text-[#070313] bg-[#fffafb];
+  @apply text-[#02010a] bg-[#fffafb];
 }
 .intro {
-  @apply lg:text-4xl text-xl font-bold;
+  @apply lg:text-4xl md:text-2xl text-xl font-bold;
   color: #000;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -124,7 +124,7 @@ nav {
   @apply bg-[#2b2c28] text-[#fffafb];
 }
 .Pannel--links {
-  @apply flex  flex-col cursor-pointer gap-6 text-lg;
+  @apply flex  flex-col font-bold cursor-pointer gap-6 text-lg;
 }
 .Pannel--links a:hover,
 .Pannel--links a:focus {
@@ -182,7 +182,7 @@ nav {
   background-size: cover;
 }
 .box {
-  @apply lg:h-[350px] h-[180px] items-center   rounded-lg text-black flex justify-around    lg:w-[600px] w-[450px]  px-2 xl:px-6 py-6  bg-[#fffafb];
+  @apply h-[300px]  items-center   rounded-lg  flex justify-around    w-[500px]   px-2 xl:px-6 py-6;
 }
 .box h2 {
   @apply font-bold text-lg break-words lg:text-3xl;
@@ -195,8 +195,8 @@ nav {
   @apply gap-4 w-full  flex items-center justify-center    flex-wrap px-12;
 }
 .LANDING-IMG {
-  @apply absolute top-8 lg:top-[16%]    lg:right-[16%] lg:h-[750px] lg:w-[900px] w-[90%];
+  @apply absolute top-8 lg:top-[16%]  right-[3%]  lg:right-[12%] lg:h-[750px] xl:w-[1000px] lg:w-[900px] xl:right-[12%] w-[90%];
 }
 .chose-us-text {
-  @apply text-start  xl:gap-12 flex flex-col  h-full   px-4  w-[50%];
+  @apply text-start  xl:gap-5 flex flex-col  h-full   px-4  w-[50%];
 }

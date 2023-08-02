@@ -17,7 +17,7 @@ function MarketSec() {
   }, []);
   return (
     <article
-      className={`  lg:w-[60%] w-screen  flex justify-center flex-col overflow-hidden  px-12  gap-4  lg:gap-12 items-center ${
+      className={`  lg:w-[80%] w-screen  flex justify-center flex-col overflow-hidden  px-12  gap-4  lg:gap-12 items-center ${
         darkmode ? "dark-mode" : "ligth-mode   "
       }`}
     >
@@ -45,7 +45,7 @@ function MarketSec() {
       </div>
       <section
         id="currencies"
-        className={` px-4 py-1 ${
+        className={` px-4 py-1  ${
           darkmode ? "bg-[#1a1a1a] text-[#fffafb]" : "ligth-mode   ligth-shadow"
         }`}
       >
