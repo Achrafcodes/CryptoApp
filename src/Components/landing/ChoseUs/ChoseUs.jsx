@@ -12,7 +12,7 @@ function ChoseUs() {
         Why Chose Us
       </h1>
       <div className="lg:block hidden">
-        <div className=" box-container ">
+        <div className=" box-container gap-12">
           {data.map(
             (
               item,
@@ -20,9 +20,7 @@ function ChoseUs() {
             ) => (
               <div
                 key={i}
-                className={`box  ${
-                  darkmode ? " dark-mode bg-[#04052e]" : "ligth-mode"
-                } `}
+                className={`box  ${darkmode ? " bg-[#211060]" : "ligth-mode"} `}
               >
                 <div className="chose-us-text">
                   <h2>{item.title}</h2>

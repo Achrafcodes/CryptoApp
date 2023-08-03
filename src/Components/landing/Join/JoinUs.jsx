@@ -7,13 +7,6 @@ function JoinUs() {
   let darkmode = useSelector((state) => state.darkmode.darkmode);
   return (
     <article className={`join ${darkmode ? "dark-mode" : "ligth-mode"}`}>
-      <h1 className="text-5xl   text-center font-bold ">Join Us</h1>
-      <p className=" text-center  font-thin text-xl">
-        Thank you for choosing Crypto
-        <span className="text-[#28B8B0] font-bold logospan ">Fizz</span> as your
-        trusted crypto trading partner. Let's embark on this exciting journey
-        together and uncork the fizz of crypto potential!
-      </p>
       <section
         style={
           darkmode
@@ -22,7 +15,10 @@ function JoinUs() {
         }
         className=" flex items-center flex-col gap-12"
       >
-        <p className="text-center text-3xl font-medium w-[60%]">
+        <h1 className="xl:text-5xl  lg:text-3xl md:text-2xl text-xl text-center font-bold ">
+          Join Us
+        </h1>
+        <p className="text-center lg:h-auto lg:overflow-hidden p-4 h-[200px] overflow-y-scroll lg:text-xl text-lg xl:text-3xl font-medium w-full lg:w-[60%]">
           Join us at Crypto
           <span className="text-[#28B8B0] font-bold logospan">Fizz</span> and be
           part of a dynamic community that shares your enthusiasm for
@@ -30,6 +26,13 @@ function JoinUs() {
           explore new investment opportunities, or simply stay updated on the
           latest trends, our platform has something for everyone.
         </p>
+        <p className=" text-center  lg:w-[80%] font-thin text-base  md:text-lg lg:text-xl">
+          Thank you for choosing Crypto
+          <span className="text-[#28B8B0] font-bold logospan ">Fizz</span> as
+          your trusted crypto trading partner. Let's embark on this exciting
+          journey together and uncork the fizz of crypto potential!
+        </p>
+
         <div className="butts">
           <button
             className={` ${
@@ -39,12 +42,12 @@ function JoinUs() {
             }`}
           >
             <a href="">
-              Join Us On Discord <BsDiscord />
+              Join Us On Discord <BsDiscord className="hidden md:block" />
             </a>
           </button>
           <button className={` ${darkmode ? "dark-button" : "ligth-button"}`}>
             <a href="">
-              Join Us On Instagram <BsInstagram />
+              Join Us On Instagram <BsInstagram className="hidden md:block" />
             </a>
           </button>
         </div>
