@@ -10,9 +10,9 @@ function JoinUs() {
       <h1 className="text-5xl   text-center font-bold ">Join Us</h1>
       <p className=" text-center  font-thin text-xl">
         Thank you for choosing Crypto
-        <span className="text-[#28B8B0] font-bold ">Fizz</span> as your trusted
-        crypto trading partner. Let's embark on this exciting journey together
-        and uncork the fizz of crypto potential!
+        <span className="text-[#28B8B0] font-bold logospan ">Fizz</span> as your
+        trusted crypto trading partner. Let's embark on this exciting journey
+        together and uncork the fizz of crypto potential!
       </p>
       <section
         style={
@@ -24,11 +24,11 @@ function JoinUs() {
       >
         <p className="text-center text-3xl font-medium w-[60%]">
           Join us at Crypto
-          <span className="text-[#28B8B0] font-bold">Fizz</span> and be part of
-          a dynamic community that shares your enthusiasm for cryptocurrencies.
-          Whether you're aiming to build your portfolio, explore new investment
-          opportunities, or simply stay updated on the latest trends, our
-          platform has something for everyone.
+          <span className="text-[#28B8B0] font-bold logospan">Fizz</span> and be
+          part of a dynamic community that shares your enthusiasm for
+          cryptocurrencies. Whether you're aiming to build your portfolio,
+          explore new investment opportunities, or simply stay updated on the
+          latest trends, our platform has something for everyone.
         </p>
         <div className="butts">
           <button
