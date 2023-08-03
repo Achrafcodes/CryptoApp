@@ -70,7 +70,7 @@ body {
 }
 /* navBar */
 nav {
-  @apply w-screen flex justify-between    px-24 h-16 items-center;
+  @apply w-screen flex justify-between   gap-12  px-24 h-16 items-center;
   background-color: #1a1a1a;
   z-index: 999;
 }
@@ -142,10 +142,10 @@ nav {
   @apply rotate-[360deg] scale-125;
 }
 .dark-button {
-  @apply cursor-pointer bg-[#ffff] rounded-lg text-[#44555f];
+  @apply cursor-pointer bg-[#ffff] rounded-lg text-[#28B8B0];
 }
 .ligth-button {
-  @apply cursor-pointer bg-[#44555f] rounded-lg text-[#ffff];
+  @apply cursor-pointer bg-[#28B8B0] rounded-lg text-[#ffff];
 }
 .dark-button:hover,
 .ligth-button:hover {
@@ -199,4 +199,28 @@ nav {
 }
 .chose-us-text {
   @apply text-start  xl:gap-5 flex flex-col  h-full   px-4  w-[50%];
+}
+/* Join us section */
+.join {
+  @apply py-6 h-[70vh]  flex-col  gap-12 flex items-center;
+}
+.join section {
+  @apply flex h-[70%]  items-center justify-center rounded-2xl w-[80%];
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 10px 15px 9px rgba(107, 105, 105, 0.2);
+}
+.butts {
+  @apply w-full justify-center gap-12 flex;
+}
+.butts button {
+  @apply w-[25%]  flex items-center rounded-xl justify-center gap-4   h-16;
+}
+.butts button a {
+  @apply flex gap-4 w-full items-center  justify-center text-xl font-bold;
+}
+.butts button:hover,
+.butts button:focus {
+  transform: translate(1px, -2px);
+  box-shadow: 0px 10px 15px 9px rgba(107, 105, 105, 0.2);
 }

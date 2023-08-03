@@ -21,11 +21,11 @@ function CryptoContainer() {
       }`}
     >
       <section
-        className={`curr--section ${
+        className={`curr--section  ${
           darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
         } `}
       >
-        <div className="cur--name">
+        <div className="cur--name ">
           <h1>#</h1>
           <h1 className="name">Name</h1>
         </div>

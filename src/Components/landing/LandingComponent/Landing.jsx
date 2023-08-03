@@ -2,7 +2,7 @@ import "../main.css";
 import androidphone from "../../../assets/androidphone.jpg";
 function Landing() {
   return (
-    <article className="lg:h-screen h-[70vh] md:h-[90vh]  w-screen bg-[#211060] relative">
+    <article className="lg:h-screen  h-[70vh] md:h-[90vh]  w-screen bg-[#211060] relative">
       <div className="h-full lg:w-96 w-[60%] right-12  absolute z-0 lg:right-[16%] bg-[#28B8B0]"></div>
       <img src={androidphone} className="LANDING-IMG" alt="" />
       <div

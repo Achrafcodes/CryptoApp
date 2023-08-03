@@ -50,7 +50,7 @@ function MarketSec() {
         }`}
       >
         <section
-          className={`curr--section  ${
+          className={`curr--section   ${
             darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
           } `}
         >

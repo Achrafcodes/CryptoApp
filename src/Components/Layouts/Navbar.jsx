@@ -1,9 +1,4 @@
-import {
-  BsTwitter,
-  BsDiscord,
-  BsFillMoonFill,
-  BsFillSunFill,
-} from "react-icons/bs";
+import { BsTwitter, BsDiscord, BsFillSunFill } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "../../redux/darkmodeSlice";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
