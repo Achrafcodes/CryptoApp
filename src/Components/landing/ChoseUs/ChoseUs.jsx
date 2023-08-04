@@ -20,7 +20,9 @@ function ChoseUs() {
             ) => (
               <div
                 key={i}
-                className={`box  ${darkmode ? " bg-[#211060]" : "ligth-mode"} `}
+                className={`box  ${
+                  darkmode ? " bg-[#04052e]" : "bg-[#f1f1f1]"
+                } `}
               >
                 <div className="chose-us-text">
                   <h2>{item.title}</h2>

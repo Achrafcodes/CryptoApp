@@ -72,7 +72,6 @@ body {
 /* navBar */
 nav {
   @apply w-screen flex justify-between   gap-12  px-24 h-16 items-center;
-  background-color: #1a1a1a;
   z-index: 999;
 }
 .Nav--logo {
@@ -233,10 +232,10 @@ nav {
 }
 /* footer */
 footer {
-  @apply h-[30vh] flex flex-col gap-5 w-full px-4;
+  @apply h-[30vh] flex flex-col gap-6 w-full px-24 py-6;
 }
-footer article {
-  @apply flex w-[100%] justify-center gap-36;
+footer section article {
+  @apply flex w-[50%]  gap-36;
 }
 .footer-buts {
   @apply flex flex-col gap-8;
