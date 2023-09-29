@@ -46,12 +46,12 @@ function MarketSec() {
       <section
         id="currencies"
         className={` px-4 py-1  ${
-          darkmode ? "bg-[#1a1a1a] text-[#fffafb]" : "ligth-mode   ligth-shadow"
+          darkmode ? "bg-[#04052e] text-[#fffafb]" : "ligth-mode   ligth-shadow"
         }`}
       >
         <section
-          className={`curr--section  ${
-            darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
+          className={`curr--section   ${
+            darkmode ? "bg-[#04052e]" : "bg-[#f1f1f1]"
           } `}
         >
           <div className="cur--name">
@@ -70,7 +70,7 @@ function MarketSec() {
             <section
               key={i}
               className={`curr--section ${
-                darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
+                darkmode ? "bg-[#04052e]" : "bg-[#f1f1f1]"
               } `}
             >
               <div className={`cur--name`}>

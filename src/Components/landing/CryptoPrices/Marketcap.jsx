@@ -61,8 +61,8 @@ function Marketcap({ data }) {
             <section
               className={`Marketcap-slide ${
                 darkmode
-                  ? "ligth-shadow  bg-[#1a1a1a]"
-                  : "ligth-shadow bg-[#fefefe]"
+                  ? "ligth-shadow  bg-[#04052e]"
+                  : "ligth-shadow bg-[#f1f1f1]"
               } `}
               key={i}
               style={containerStyle}
@@ -86,7 +86,9 @@ function Marketcap({ data }) {
           {/* Button to navigate to the right */}
           <button
             onClick={HandlePrevSlide}
-            className={darkmode ? "ligth-button" : "dark-button "}
+            className={` p-2  flex items-center text-center justify-center duration-150 hover:bg-gray-400/50 ${
+              darkmode ? "text-[#f1f1f1] " : "text-[#04052e]"
+            }`}
           >
             {" "}
             <BsChevronLeft />
@@ -94,7 +96,9 @@ function Marketcap({ data }) {
           {/* Button to navigate to the left */}
           <button
             onClick={HandleNextSlide}
-            className={darkmode ? "ligth-button" : "dark-button "}
+            className={` p-2  flex items-center text-center justify-center duration-150 hover:bg-gray-400/50 ${
+              darkmode ? "text-[#f1f1f1] " : "text-[#04052e]"
+            }`}
           >
             {" "}
             <BsChevronRight />{" "}

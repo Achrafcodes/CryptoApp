@@ -9,7 +9,9 @@ function Carouselle() {
   let darkmode = useSelector((state) => state.darkmode.darkmode);
   return (
     <article
-      className={`Top-post ${darkmode ? " bg-[#1a1a1a]" : " bg-[#fefefe]"}`}
+      className={`Top-post py-2 ${
+        darkmode ? " bg-[#04052e]" : " bg-[#f1f1f1]"
+      }`}
     >
       <Slideshow interval={3600}>
         <section className={`top-Accounts `}>

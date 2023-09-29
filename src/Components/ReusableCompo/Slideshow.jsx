@@ -40,7 +40,7 @@ const Slideshow = ({ interval, children }) => {
               height: "10px",
               borderRadius: "50%",
               margin: "0 5px",
-              backgroundColor: index === activeSlide ? "#76f9f9" : "#414650",
+              backgroundColor: index === activeSlide ? "#28B8B0" : "#414650",
             }}
           />
         ))}

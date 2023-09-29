@@ -1,9 +1,4 @@
-import {
-  BsTwitter,
-  BsDiscord,
-  BsFillMoonFill,
-  BsFillSunFill,
-} from "react-icons/bs";
+import { BsTwitter, BsDiscord, BsFillSunFill } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "../../redux/darkmodeSlice";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -35,15 +30,13 @@ function Navbar() {
   return (
     <nav
       className={
-        darkmode ? "  dark-mode bg-[#04052e]" : "light-mode bg-[#fefefe]"
+        darkmode ? "  dark-mode bg-[#04052e]" : "light-mode bg-[#f1f1f1]"
       }
     >
       {/* Logo */}
       <h1 className="Nav--logo">
         Coin
-        <span className={darkmode ? "text-[#28B8B0]" : "text-[#858585]"}>
-          Fizz
-        </span>
+        <span className="text-[#28B8B0]">Fizz</span>
       </h1>
 
       {/* Navigation links */}

@@ -17,15 +17,15 @@ function CryptoContainer() {
     <article
       id="currencies"
       className={`  ${
-        darkmode ? "bg-[#1a1a1a] text-[#fffafb]" : "ligth-mode   ligth-shadow"
+        darkmode ? "bg-[#04052e] text-[#fffafb]" : "bg-[#f1f1f1]  ligth-shadow"
       }`}
     >
       <section
-        className={`curr--section ${
-          darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
+        className={`curr--section  ${
+          darkmode ? "bg-[#04052e]" : "bg-[#f1f1f1]"
         } `}
       >
-        <div className="cur--name">
+        <div className="cur--name ">
           <h1>#</h1>
           <h1 className="name">Name</h1>
         </div>
@@ -47,7 +47,7 @@ function CryptoContainer() {
           <section
             key={i}
             className={`curr--section ${
-              darkmode ? "bg-[#1a1a1a]" : "bg-[#f1f1f1]"
+              darkmode ? "bg-[#04052e]" : "bg-[#f1f1f1]"
             } `}
           >
             <div className={`cur--name `}>

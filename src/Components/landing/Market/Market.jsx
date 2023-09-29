@@ -31,11 +31,15 @@ function Market() {
     transition: "transform 0.5s ", // Adding a smooth transition effect
   };
   return (
-    <div className={`market ${darkmode ? "dark-mode" : "ligth-mode "}`}>
+    <div className={`market ${darkmode ? "dark-mode" : "ligth-mode  "}`}>
       <section className="caroussel">
         {data.slice(0, 16).map((json, i) => (
           <section
-            className={darkmode ? "ligth-button" : "dark-button"}
+            className={
+              darkmode
+                ? "bg-[#04052e] text-[#f1f1f1]"
+                : "bg-[#f1f1f1] text-[#04052e]"
+            }
             style={containerStyle}
             key={i}
           >

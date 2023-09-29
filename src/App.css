@@ -34,8 +34,9 @@ button {
 .hero {
   @apply flex flex-col  justify-center items-center  gap-12;
 }
+/* 17242A   2B7A77 3AAFA9 DEF2F1 #FEFFFF */
 .dark-mode {
-  @apply text-[#fffafb] bg-[#070313];
+  @apply text-[#fffafb] bg-[#0d0626];
 }
 .ligth-mode {
   @apply text-[#02010a] bg-[#fffafb];
@@ -70,8 +71,7 @@ body {
 }
 /* navBar */
 nav {
-  @apply w-screen flex justify-between    px-24 h-16 items-center;
-  background-color: #1a1a1a;
+  @apply w-screen flex justify-between   gap-12  px-24 h-16 items-center;
   z-index: 999;
 }
 .Nav--logo {
@@ -142,10 +142,10 @@ nav {
   @apply rotate-[360deg] scale-125;
 }
 .dark-button {
-  @apply cursor-pointer bg-[#ffff] rounded-lg text-[#44555f];
+  @apply cursor-pointer bg-[#ffff] rounded-lg text-[#28B8B0];
 }
 .ligth-button {
-  @apply cursor-pointer bg-[#44555f] rounded-lg text-[#ffff];
+  @apply cursor-pointer bg-[#28B8B0] rounded-lg text-[#ffff];
 }
 .dark-button:hover,
 .ligth-button:hover {
@@ -176,13 +176,14 @@ nav {
 .car-slide {
   @apply flex h-screen  gap-4 overflow-hidden items-center;
 }
-.ChoseUs {
+/* .ChoseUs {
   background: url(./assets/blurry-gradient-haikei.svg);
   background-position: center;
   background-size: cover;
-}
+} */
 .box {
   @apply h-[300px]  items-center   rounded-lg  flex justify-around    w-[500px]   px-2 xl:px-6 py-6;
+  box-shadow: 0px 10px 15px 9px rgba(107, 105, 105, 0.2);
 }
 .box h2 {
   @apply font-bold text-lg break-words lg:text-3xl;
@@ -199,4 +200,49 @@ nav {
 }
 .chose-us-text {
   @apply text-start  xl:gap-5 flex flex-col  h-full   px-4  w-[50%];
+}
+/* Join us section */
+.join {
+  @apply py-6 lg:h-[70vh] h-screen    flex-col  md:gap-6 gap-3 px-3 lg:gap-12 flex items-center;
+}
+.join section {
+  @apply flex h-[70%]  items-center px-3 py-3   lg:py-12 rounded-2xl w-[90%];
+
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 10px 15px 9px rgba(107, 105, 105, 0.2);
+}
+.butts {
+  @apply w-full justify-center gap-2 md:gap-4 lg:gap-12 flex;
+}
+.butts button {
+  @apply lg:w-[25%]  w-[50%]  flex items-center rounded-xl justify-center gap-4   h-16;
+}
+.butts button a,
+.footer-buts button a {
+  @apply flex gap-4 w-full items-center  justify-center lg:text-xl font-bold text-base;
+}
+.butts button:hover,
+.butts button:focus {
+  transform: translate(1px, -2px);
+  box-shadow: 0px 10px 15px 9px rgba(107, 105, 105, 0.2);
+}
+.logospan {
+  font-family: "Kaushan Script", cursive;
+}
+/* footer */
+footer {
+  @apply h-[30vh] flex flex-col gap-6 w-full px-24 py-6;
+}
+footer section article {
+  @apply flex w-[50%]  gap-36;
+}
+.footer-buts {
+  @apply flex flex-col gap-8;
+}
+.footer-buts button {
+  @apply w-[300px] px-3 h-[60px];
+}
+footer article section {
+  @apply gap-3 flex flex-col;
 }

@@ -7,6 +7,7 @@ import { Suspense, lazy } from "react";
 const LazyMarket = lazy(() => import("./Components/landing/Market/Market"));
 import Loading from "./Components/Loading/Loading";
 import Hero from "./Components/landing/hero";
+import Fotter from "./Components/Layouts/Fotter";
 function App() {
   return (
     <Provider store={store}>
@@ -24,6 +25,7 @@ function App() {
             }
           />
         </Routes>
+        <Fotter />
       </Router>
     </Provider>
   );
