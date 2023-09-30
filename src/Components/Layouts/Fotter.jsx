@@ -12,41 +12,57 @@ function Fotter() {
       <h1 className="text-3xl font-bold">
         Coin<span className="logospan text-[#28B8B0] ">Fizz</span>
       </h1>
-      <section className=" flex gap-44 flex-row px-12">
+      <section className=" flex lg:gap-44 w-screen flex-col  lg:flex-row px-12">
         {" "}
-        <article className="flex ">
-          <section>
+        <article className="flex lg:flex-row flex-col ">
+          <section className="flex flex-col items-center  gap-3">
             {" "}
-            <h1 className="text-xl text-[#28B8B0] font-bold ">Links</h1>
-            <div className="nav--links  text-lg  font-bold flex flex-col">
-              <a href="#home">Home</a>
-              <a href="#market">Market</a>
-              <a href="#choseus">Choose Us</a>
-              <a href="#join">Join</a>
+            <h1 className="  lg:text-xl text-[#28B8B0] font-bold ">Links</h1>
+            <div className="nav--links  text-lg  font-bold flex flex-row lg:flex-col">
+              <a className="text-sm lg:text-lg" href="#home">
+                Home
+              </a>
+              <a className="text-sm lg:text-lg" href="#market">
+                Market
+              </a>
+              <a className="text-sm lg:text-lg" href="#choseus">
+                Choose Us
+              </a>
+              <a className="text-sm lg:text-lg" href="#join">
+                Join
+              </a>
             </div>
           </section>
-          <section className="text-lg nav--links font-bold ">
-            <h1 className="text-xl text-[#28B8B0] font-bold">Market</h1>
+          <section className="text-lg items-center  flex-col  nav--links font-bold ">
+            <h1 className="  lg:text-xl text-[#28B8B0] font-bold">Market</h1>
             <a href="#market">Crypto Prices</a>
           </section>
-          <section className="  ">
-            <h1 className="text-xl text-[#28B8B0] font-bold">Contact Us</h1>
-            <div className="  text-lg nav--links font-bold flex flex-col ">
+          <section className="flex-col items-center  flex ">
+            <h1 className="  lg:text-xl text-[#28B8B0] font-bold">
+              Contact Us
+            </h1>
+            <div className="  lg:text-lg nav--links font-bold flex   lg:flex-col ">
               <a className="flex  items-center gap-2" href="">
-                Join Us On Discord{" "}
-                <BsDiscord className="hidden text-lg  md:block" />
+                <span className="hidden text-lg  md:block">
+                  {" "}
+                  Join Us On Discord{" "}
+                </span>{" "}
+                <BsDiscord className="text-xl" />
               </a>
 
               <a className="flex  items-center gap-2" href="">
-                Join Us On Instagram{" "}
-                <BsInstagram className="hidden  text-lg md:block" />
+                <span className="hidden text-lg  md:block">
+                  {" "}
+                  Join Us On Instagram{" "}
+                </span>{" "}
+                <BsInstagram className="text-xl" />
               </a>
             </div>
           </section>{" "}
         </article>
         <div className="h-full w-1 bg-white/25 "></div>
-        <section className=" flex flex-col  gap-3">
-          <h1 className="text-xl self-start text-[#28B8B0] font-bold">
+        <section className=" flex flex-col  items-center gap-3">
+          <h1 className="text-xl lg:self-start text-[#28B8B0] font-bold">
             Subscribe
           </h1>
           <p className="font-thin">Stay Up to Date</p>

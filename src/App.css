@@ -17,6 +17,9 @@
 button {
   transition: all ease 0.2s;
 }
+body {
+  overflow-x: hidden;
+}
 /* Light Mode Styles */
 /* .light-mode {
   --primary-color: var(--primary-color-light);
@@ -232,10 +235,10 @@ nav {
 }
 /* footer */
 footer {
-  @apply h-[30vh] flex flex-col gap-6 w-full px-24 py-6;
+  @apply lg:h-[30vh]  h-full items-center lg:items-start flex flex-col gap-6 w-full lg:px-24 px-3 py-6;
 }
 footer section article {
-  @apply flex w-[50%]  gap-36;
+  @apply flex lg:w-[50%]  gap-6 lg:items-center  items-center sm:items-center w-full lg:gap-36;
 }
 .footer-buts {
   @apply flex flex-col gap-8;
@@ -244,5 +247,5 @@ footer section article {
   @apply w-[300px] px-3 h-[60px];
 }
 footer article section {
-  @apply gap-3 flex flex-col;
+  @apply gap-3 flex items-start h-full   flex-col;
 }

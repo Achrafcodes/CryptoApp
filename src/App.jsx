@@ -13,19 +13,22 @@ function App() {
     <Provider store={store}>
       {" "}
       <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route
-            path="market"
-            element={
-              <Suspense fallback={<Loading />}>
-                <LazyMarket />{" "}
-              </Suspense>
-            }
-          />
-        </Routes>
-        <Fotter />
+        <div className="flex flex-col overflow-x-hidden max-w-[100vw]">
+          {" "}
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route
+              path="market"
+              element={
+                <Suspense fallback={<Loading />}>
+                  <LazyMarket />{" "}
+                </Suspense>
+              }
+            />
+          </Routes>
+          <Fotter />
+        </div>
       </Router>
     </Provider>
   );

@@ -8,7 +8,9 @@ function MarketSec() {
   let [data, setdata] = useState([]);
   let darkmode = useSelector((state) => state.darkmode.darkmode);
   useEffect(() => {
-    fetch("../../../../data.json")
+    fetch(
+      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=INR&order=market_cap_desc&per_page=100&page=1&sparkline=false"
+    )
       .then((response) => response.json())
       .then((jsonData) => setdata(jsonData))
       .catch((error) => {
