@@ -93,7 +93,7 @@
   @apply w-[100px];
 }
 .curr--section {
-  @apply flex    justify-center gap-12 font-bold;
+  @apply flex   px-4 min-w-[60vw]  justify-center gap-12 font-bold;
 }
 .crypto-list {
   @apply flex lg:w-auto lg:gap-12    gap-12 flex-row h-14;

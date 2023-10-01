@@ -175,6 +175,7 @@ nav {
 }
 .curr--section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  background: red;
 }
 .car-slide {
   @apply flex h-screen  gap-4 overflow-hidden items-center;
