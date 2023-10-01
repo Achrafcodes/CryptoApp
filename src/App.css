@@ -175,7 +175,6 @@ nav {
 }
 .curr--section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-  background: red;
 }
 .car-slide {
   @apply flex h-screen  gap-4 overflow-hidden items-center;
@@ -239,7 +238,7 @@ footer {
   @apply lg:h-[30vh]  h-full items-center lg:items-start flex flex-col gap-6 w-full lg:px-24 px-3 py-6;
 }
 footer section article {
-  @apply flex lg:w-[50%]  gap-6 lg:items-center  items-center sm:items-center w-full lg:gap-36;
+  @apply flex lg:w-[50%]  gap-6 lg:items-start  items-center sm:items-center w-full lg:gap-36;
 }
 .footer-buts {
   @apply flex flex-col gap-8;

@@ -15,7 +15,7 @@ function Fotter() {
       <section className=" flex lg:gap-44 w-screen flex-col  lg:flex-row px-12">
         {" "}
         <article className="flex lg:flex-row flex-col ">
-          <section className="flex flex-col items-center  gap-3">
+          <section className="flex flex-col items-center lg:items-start  gap-3">
             {" "}
             <h1 className="  lg:text-xl text-[#28B8B0] font-bold ">Links</h1>
             <div className="nav--links  text-lg  font-bold flex flex-row lg:flex-col">
@@ -61,7 +61,7 @@ function Fotter() {
           </section>{" "}
         </article>
         <div className="h-full w-1 bg-white/25 "></div>
-        <section className=" flex flex-col  items-center gap-3">
+        <section className=" flex flex-col  sm:items-center lg:items-start items-center gap-3">
           <h1 className="text-xl lg:self-start text-[#28B8B0] font-bold">
             Subscribe
           </h1>
