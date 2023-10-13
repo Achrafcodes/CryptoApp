@@ -1,5 +1,5 @@
 // Slide.js
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Slide = ({ text, isActive }) => {
   const [typedText, setTypedText] = useState("");
